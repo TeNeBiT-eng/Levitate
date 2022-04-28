@@ -1,0 +1,33 @@
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 400;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 14px 1px black;
+    padding-top: 0.9rem;
+    padding-bottom: 0.3rem;
+  nav{
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+      align-items: center;
+  }
+  h1{
+      color: $text-color-blue;
+  }
+  ul{
+      display: none;
+  }
+  .dropdown{
+      display: none;
+  }
+  .img-logo{
+      display: flex;
+      align-items: center;
+  }
+  .img-logo div{
+      padding-left: 5px;
+  }
+}
