@@ -16,55 +16,60 @@
     
     <header>
         <nav>
-            <div class="img-logo">
-                <img src="/images/levitatelogo.svg" alt="website-logo"> 
-                <div>
-                    <h1>Levitate</h1>
+            <div class="navContent">
+                <div class="img-logo">
+                    <img src="/images/levitatelogo.svg" alt="website-logo">
+                    <div>
+                        <h1>Levitate</h1>
+                    </div>
                 </div>
-            </div>
-            <ul>
-                <li><img src="/images/levitatelogo.svg" alt=""></li>
-                <li>
-                    <a href="#">Products</a>
-                </li>
-                <li>
-                    <a href="#">Prices</a>
-                </li>
-                <li>
-                    <a href="#">Support</a>
-                </li>
-                <li>
-                    <a href="#">Learn</a>
-                </li>
-                <li>
-                    <a href="#">Futures</a>
-                </li>
-                <li>
-                    <a href="#">Resources</a>
-                </li>
-            </ul>
-            <div class="dropdown">
-                <div class="dropbtn" onclick="myFunction()">Lang
-                    <i class="fa-solid fa-globe"></i>
+                <div class="ulContainer1 none">
+                    <ul>
+                        <!-- <li class="levitateLogo">
+                            <img class="levitateLogo" src="/images/levitatelogo.svg" alt="">
+                        </li> -->
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Prices</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                        <li>
+                            <a href="#">Learn</a>
+                        </li>
+                        <li>
+                            <a href="#">Futures</a>
+                        </li>
+                        <li>
+                            <a href="#">Resources</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="dropdown-content" id="myDropdown">
-                  <ul>
-                      <li>English</li>
-                      <li>Arabic</li>
-                      <li>Deutcshe</li>
-                      <li>German</li>
-                      <li>Mandarin</li>
-                      <li>Igbo</li>
-                      <li>Hausa</li>
-                      <li>Yoruba</li>
-                      <li>Afrikan</li>
-                      <li>Swahili</li>
-                  </ul>
+                    <div class="dropdown none">
+                        <div class="dropbtn" style="cursor: pointer;" id="language">Lang
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <ul class="dropdown-content" id="myDropdown">
+                            <li>English</li>
+                            <li>Arabic</li>
+                            <li>Deutcshe</li>
+                            <li>German</li>
+                            <li>Mandarin</li>
+                            <li>Igbo</li>
+                            <li>Hausa</li>
+                            <li>Yoruba</li>
+                            <li>Afrikan</li>
+                            <li>Swahili</li>
+                        </ul>
+                    </div>
+                    <div class="ellipsisVertical none_r">
+                        <i class="fa-solid fa-ellipsis-vertical" onclick="changeicon(this)"></i>
+                    </div>
                 </div>
-                </div>
-                <div>
-                    <i class="fa-solid fa-ellipsis-vertical" onclick="changeicon(this)"></i>
-                </div>
+            
         </nav>
     </header>
      <main>
@@ -155,27 +160,49 @@
             </div>
 
             <div class="form">
-                <form action="">
-                    <label for="email">Email Address</label> <br>
-                    <input type="email" name="email" required>
-                    <button class="sign-in-btn2" type="submit">Sign in</button>
-                </form>
+                <div>
+                    
+                    <form action="">
+                        <p class="email">Email Address</p>
+                        <input type="email" name="email" placeholder="e.g example@gmail.com" required>
+                        <form action="">
+                            <button class="sign-in-btn2" type="submit">Sign in</button>
+                        </form>
+                    </form>
+                </div>
+                <!-- <div>
+                    
+                </div> -->
             </div>
         </section>
 
-        <!-- <footer>
-            <img src="/images/levitate-logo-white.svg" alt="website-logo">
-            <ul>
-                <li>Products</li>
-                <li>Top instruments</li>
-                <li>Legal</li>
-                <li>Company</li>
-            </ul>
-            <img src="/images/Arrow1 bg-orange.svg" alt="">
-            <img src="/images/Social media.svg" alt="social-media">
-            <img src="/images/All right reserved-text.svg" alt="copyright">
-        </footer> -->
+        <footer>
+            <div class="footer-container">
+                <div class="container-levitate-logo-white">
+                    <img class="levitate-logo-white" src="/images/levitate-logo-white.svg" alt="website-logo">
+                </div>
+                <ul>
+                    <li>Products</li>
+                    <li>Top instruments</li>
+                    <li>Legal</li>
+                    <li>Company</li>
+                </ul>
+                <div class="arrow-footer">
+                    <img class="top" src="/images/top.svg" alt="">
+                    <a href="#"><img class="arrow" src="/images/Arrow1 bg-orange.svg" alt=""></a>
+                </div>
+                 <br>
+                <div class="social_media">
+                    <img class="s_media" src="/images/Social media.svg" alt="social-media">
+                </div>
+                 <br>
+                <div class="all_right">
+                    <img class="allRight" src="/images/All right reserved-text.svg" alt="copyright">
+                </div>
+            </div>
+        </footer>
     </main>
-    <script src="/js/header.js"></script> 
+    <script src="/js/header.js"></script>
+    <script src="/js/section.js"></script>
 </body>
 </html>

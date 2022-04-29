@@ -14,24 +14,57 @@ header {
   z-index: 400;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 14px 1px black;
-  padding-top: 0.9rem;
-  padding-bottom: 0.3rem;
+  padding: 0.9rem 5vw 0.3rem;
 }
-header nav {
+header .navContent {
   display: flex;
   justify-content: space-between;
-  width: 90%;
   margin: 0 auto;
   align-items: center;
+}
+header .navContent .ulContainer1 ul {
+  display: flex;
+  gap: 3rem;
+}
+header .navContent .ulContainer1 ul li a {
+  text-decoration: none;
+  color: #030d6c;
+  transition: all 300ms ease;
+}
+header .navContent .ulContainer1 ul li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+  color: orange;
+  font-size: 1.3rem;
 }
 header h1 {
   color: #030d6c;
 }
-header ul {
+header .none {
   display: none;
 }
-header .dropdown {
+@media screen and (min-width: 768px) {
+  header .none {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .none_r {
+    display: none;
+  }
+}
+header .dropdown-content {
   display: none;
+  position: absolute;
+  width: 13vw;
+  background-color: #efefef;
+  border-radius: 6px;
+  padding: 2vh 1vw;
+  line-height: 1.65;
+  color: grey;
+  top: 74px;
+  right: 10px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.15);
 }
 header .img-logo {
   display: flex;
@@ -41,6 +74,11 @@ header .img-logo div {
   padding-left: 5px;
 }
 
+@media (min-width: 768px) {
+  header nav .navContent {
+    display: flex;
+  }
+}
 .section-1 {
   width: 100%;
   margin: 0 auto;
@@ -225,12 +263,23 @@ header .img-logo div {
   margin-top: 2rem;
   text-align: center;
 }
+.section-4 .email {
+  width: 94%;
+  margin: 0 auto;
+  text-align: start;
+  color: #030d6c;
+}
 .section-4 form button {
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   border-radius: 0.8rem;
   border: none;
   background-color: #030d6c;
   color: white;
+  margin-top: 1.6rem;
+  width: 100%;
+}
+.section-4 .form div {
+  flex-grow: 1;
 }
 .section-4 form {
   width: 90%;
@@ -239,5 +288,59 @@ header .img-logo div {
 .section-4 form label {
   color: #030d6c;
   font-size: 0.9rem;
-  margin-right: 2rem;
+  margin-right: 15rem;
+}
+.section-4 form input {
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: rgba(213, 214, 219, 0.509);
+  margin-top: 0.3rem;
+  width: 100%;
+}
+
+footer {
+  background-color: #030d6c;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+footer .container-levitate-logo-white {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+}
+footer .levitate-logo-white {
+  width: 2rem;
+}
+footer .footer-container ul {
+  width: 100%;
+  text-align: center;
+}
+footer .footer-container ul li {
+  color: white;
+  padding: 1.3rem;
+}
+footer .arrow-footer {
+  text-align: end;
+  margin-left: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+footer .arrow {
+  transform: translateX(-2rem);
+}
+footer .top {
+  transform: translateY(1.16rem);
+}
+footer .social_media {
+  text-align: center;
+}
+footer .s_media {
+  width: 11rem;
+}
+footer .all_right {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

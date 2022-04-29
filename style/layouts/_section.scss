@@ -42,6 +42,7 @@
         border-radius: 10px;
         border: none;
         background-color: $bg-color3;
+        
     }
     .sign-in-btn button{
         color: $text-color-white;
@@ -182,25 +183,45 @@
     .form{
         margin-top: 2rem;
         text-align: center;
+        // display: flex;
+        // justify-content: center;
     }
-    form button{
-        padding: 0.5rem 1rem;
-        border-radius: 0.8rem;
-        border: none;
-        background-color: $bg-color3;
-        color: $text-color-white;
+    .email{
+        width: 94%;
+        margin: 0 auto;
+        text-align: start;
+        color: $text-color-blue;
     }
+     form button{
+         padding: 1rem 2rem;
+         border-radius: 0.8rem;
+         border: none;
+         background-color: $bg-color3;
+         color: $text-color-white;
+         margin-top: 1.6rem;
+         width: 100%;
+        //  transform: translateX(-3.2rem);
+     }
+     .form div {
+         flex-grow: 1;
+     }
     form{
         width: 90%;
         margin: 0 auto;
         // text-align: center;
     }
-    form label{
-        color: $text-color-blue;
-        font-size: 0.9rem;
-        margin-right: 2rem;
-    }
-    form input{
+       form label{
+           color: $text-color-blue;
+           font-size: 0.9rem;
+           margin-right: 15rem;
+        }
+       form input{
+           padding: 1rem 1rem 1rem 1rem;
+           border-radius: 0.8rem;
+           border: none;
+           background-color: $bg-color4;
+           margin-top: 0.3rem;
+           width: 100%;
 
-    }
+     }
 }
