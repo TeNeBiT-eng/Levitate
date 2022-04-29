@@ -15,17 +15,22 @@ header{
       .ulContainer1{
           ul{
               display: flex;
-              gap: 3rem;
+              gap: 2rem;
+              @media (min-width:1200px) {
+                  gap: 3.5rem;
+              }
               li{
                   a{
                       text-decoration: none;
                       color: $text-color-blue;
-                      transition: all 300ms ease;
+                    //   transition: all 0.4s ease;
+                    transition: 0.3s;
                       &:hover{
                           text-decoration: underline;
                           text-underline-offset: 0.4rem;
                           color: orange;
                           font-size: 1.3rem;
+                        // transform: scale(1.3);
                       }
                   }
               }

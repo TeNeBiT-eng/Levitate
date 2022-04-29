@@ -5,6 +5,7 @@
   font-family: "Mulish", sans-serif;
   font-size: 16px;
   list-style-type: none;
+  text-decoration: none;
 }
 
 header {
@@ -24,12 +25,17 @@ header .navContent {
 }
 header .navContent .ulContainer1 ul {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
+}
+@media (min-width: 1200px) {
+  header .navContent .ulContainer1 ul {
+    gap: 3.5rem;
+  }
 }
 header .navContent .ulContainer1 ul li a {
   text-decoration: none;
   color: #030d6c;
-  transition: all 300ms ease;
+  transition: 0.3s;
 }
 header .navContent .ulContainer1 ul li a:hover {
   text-decoration: underline;
@@ -92,6 +98,11 @@ header .img-logo div {
   margin: 0 auto;
   margin-top: 7rem;
 }
+@media (min-width: 768px) {
+  .section-1 .section1-header1 {
+    font-size: 2.6rem;
+  }
+}
 .section-1 .section1-header2 {
   color: #030d6c;
   font-size: 1.2rem;
@@ -99,6 +110,11 @@ header .img-logo div {
   line-height: 1.3;
   width: 90%;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .section-1 .section1-header2 {
+    font-size: 2.6rem;
+  }
 }
 .section-1 .opening-little-text {
   text-align: center;
@@ -109,15 +125,27 @@ header .img-logo div {
   margin: 0 auto;
   line-height: 1.5;
 }
+@media (min-width: 768px) {
+  .section-1 .opening-little-text {
+    font-size: 1rem;
+  }
+}
 .section-1 .section-1-btn {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
+  column-gap: 1rem;
+}
+@media (min-width: 768px) {
+  .section-1 .section-1-btn {
+    -moz-column-gap: 8rem;
+         column-gap: 8rem;
+  }
 }
 .section-1 .get-started-btn button {
   color: white;
@@ -125,6 +153,11 @@ header .img-logo div {
   border-radius: 10px;
   border: none;
   background-color: #030d6c;
+  transition: 0.5s;
+}
+.section-1 .get-started-btn button:hover {
+  transform: scale(1.3);
+  background-color: rgba(255, 166, 0, 0.8);
 }
 .section-1 .sign-in-btn button {
   color: white;
@@ -132,6 +165,11 @@ header .img-logo div {
   border-radius: 10px;
   border: none;
   background-color: #ffa012;
+  transition: 0.5s;
+}
+.section-1 .sign-in-btn button:hover {
+  transform: scale(1.3);
+  background-color: rgba(3, 14, 108, 0.7254901961);
 }
 .section-1 .section-1-last-text {
   width: 60%;
@@ -146,6 +184,11 @@ header .img-logo div {
   margin: 0 auto;
   line-height: 1.5;
 }
+@media (min-width: 768px) {
+  .section-1 .section-1-last-text {
+    font-size: 1rem;
+  }
+}
 
 .section-2 {
   background-color: #ffa012;
@@ -157,14 +200,27 @@ header .img-logo div {
   text-align: center;
   padding-top: 2rem;
 }
+@media (min-width: 768px) {
+  .section-2 .section-2-ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
 .section-2 .section-2-ul li {
   padding: 2rem;
+  font-size: 900;
 }
-.section-2 .section-2-ul li h1 {
+
+.section-2-ul li h1 {
   color: #030d6c;
   font-size: 2rem;
 }
-.section-2 .section-2-ul li p {
+@media (min-width: 768px) {
+  .section-2-ul li h1 {
+    padding-bottom: 0.6rem;
+  }
+}
+.section-2-ul li h1 .section-2-ul li p {
   color: #030d6c;
   font-size: 0.9rem;
 }
@@ -334,6 +390,7 @@ footer .arrow {
 }
 footer .top {
   transform: translateY(1.16rem);
+  cursor: pointer;
 }
 footer .social_media {
   text-align: center;
