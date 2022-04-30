@@ -14,18 +14,21 @@ footer{
     .footer-container ul{
         width: 100%;
         text-align: center;
+        padding-bottom: 1rem;
     }
     .footer-container ul li {
         color: $text-color-white;
-        padding: 1.3rem;
+        padding: .3rem;
+        // font-weight: 600;
+        font-size: 0.8rem;
     }
     .arrow-footer{
         text-align: end;
         margin-left: 1rem;
         padding: 1rem;
         position: fixed;
-        bottom: 0;
-        right: 0;
+        bottom: -20px;
+        right: -16px;
     }
     .arrow{
         transform: translateX(-2rem);
@@ -42,5 +45,34 @@ footer{
     }
     .all_right{
         text-align: center;
+    }
+    span{
+        font-size: 1.2rem;
+        padding-right: 0.3rem;
+    }
+    .subMenu li {
+        // transform: translateY(-10rem);
+        display: none;
+    }
+    @media (min-width: 768px) {
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            .subMenu{
+                // margin-bottom: 4rem;
+                // text-align: start;
+                text-align: start;
+            }
+            .legal{
+                padding-inline-start: 4.9rem;
+                text-align: start;
+            }
+            .subMenu li{
+                display: block;
+            }
+            .fa-angle-down{
+                display: none;
+            }
+        }
     }
 }
