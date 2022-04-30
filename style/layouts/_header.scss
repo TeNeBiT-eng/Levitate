@@ -43,12 +43,12 @@ header{
   h1{
       color: $text-color-blue;
   }
-//   .none{
-//       display: none;
-//       @media screen and (min-width:768px) {
-//           display: flex;
-//       }
-//   }
+  .none{
+      display: none;
+      @media screen and (min-width:768px) {
+          display: flex;
+      }
+  }
   .none_r{
       @media screen and (min-width:768px) {
           display: none;

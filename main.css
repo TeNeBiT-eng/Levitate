@@ -49,6 +49,14 @@ header .navContent .ulContainer1 ul li a:hover {
 header h1 {
   color: #030d6c;
 }
+header .none {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header .none {
+    display: flex;
+  }
+}
 @media screen and (min-width: 768px) {
   header .none_r {
     display: none;
@@ -397,7 +405,7 @@ footer span {
   font-size: 1.2rem;
   padding-right: 0.3rem;
 }
-footer .subMenu li {
+footer .fa-angle-down {
   display: none;
 }
 @media (min-width: 768px) {
